@@ -53,6 +53,7 @@ button:hover{
     opacity: 0.9;
 }
 nav ul{
+    text-decoration: underline;
     display: flex;
     justify-content: space-between;
     gap:20px;

@@ -5,7 +5,7 @@
     --purple600: #1b0058;
     --red600: #dc0000;
     --body: #f9f6ff;
-    --max-width: 1200px;
+    --max-width: 120rem;
 }
 *{
     margin: 0;
@@ -14,29 +14,34 @@
 }  
 html,body{
     font-family:"Roboto", sans-serif;
-    font-weight: 300px;
+    font-weight: 300;
+    font-size: 62.5%;
     line-height: 1.4;
     scroll-behavior:smooth;
 }
 section{
-    scroll-margin: 50px;
+    scroll-margin: 5rem;
+}
+p{
+    font-size: 1.6rem;
 }
 .container {
-    max-width: 1200px;
+    max-width: 120rem;
     margin:0 auto;
 }
 header{
     background-color: var(--purple300);
     position: sticky;
-    top: 0px;
+    width: 126.3rem;
+    top: 0rem;
     z-index: 100;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: -.1rem .5rem 2rem rgba(0, 0, 0, 0.5);
 }
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
     align-items: center;
+    padding: 2rem 0rem;
     color: white;
 }
 p,.footer-upper ul{
@@ -44,21 +49,22 @@ p,.footer-upper ul{
 }
 
 button{
-    padding: 10px 15px;
-    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
     border: none;        
 }
 button:hover{
     text-decoration: underline;
     transition: 0.2s ease-in-out;
-    opacity: 0.9;
+    opacity: 0.95;
+    cursor: pointer;
 }
 nav ul{
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap:2rem;
     list-style: none; 
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 nav a{
@@ -66,14 +72,14 @@ nav a{
     color:white;
 }
 nav ul li{
-    border-bottom: 1px solid transparent;
+    border-bottom: .1rem solid transparent;
 }
 nav ul li:hover{
-    border-bottom: 1px solid white;
+    border-bottom: .1rem solid white;
 }
 .logo{
     /* color: white; */
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 .overview-section{
@@ -81,7 +87,8 @@ nav ul li:hover{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height:100vh;
+    height:60rem;
+    width: 126.3rem;
     /* display:grid;
     place-items: center; */
     display: flex;
@@ -91,34 +98,41 @@ nav ul li:hover{
 .overview-section .container{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 }
 .overview-section h1{
-    font-size: 96px;
+    font-size: 9.6rem;
 }
 .overview-section h3{
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 .music-section{
     background-color: var(--purple600);
     color:white;
-    padding-top: 50px;
+    padding-top: 5rem;
+    width: 126.3rem;
     /* height: 100vh; */
     /* height: 100vh; */
     /* display:flex; */
 }
+.about-music h3{
+    font-size: 2rem;
+}
 .music-section .container{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     align-items:center;
     justify-content: center;
     text-align: center;
 }
+.music-section .container h2{
+    font-size: 2.2rem;
+} 
 .iphone-ipad-img{
-    margin-top: -400px;
+    margin-top: -40rem;
     position: relative;
-    top: 400px;
+    top: 40rem;
 }
 .primary-btn{
     background-color: var(--red600);
@@ -129,10 +143,10 @@ nav ul li:hover{
     color: white; 
 }
 .about-music{
-    padding-top: 500px;
+    padding-top: 50rem;
     display: grid;
     place-items: center;
-    gap: 50px;
+    gap: 5rem;
     text-align: center;
 }
 .video-section{
@@ -140,56 +154,88 @@ nav ul li:hover{
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
-    height: 800px;
+    height: 60rem;
+    width: 126.3rem;
     display:grid;
     place-items: center;
     text-align:center;
-
 }
 .video-section .container{
     display:flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: -200px;
-
+    align-content:center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: -20rem;
 }
 .video-section .container h3{
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 .gift-card-section{
-    /* height:100vh; */
     display:flex;
     justify-content: center;
-    margin:100px 40px;
-    gap: 50px;
-    scroll-margin: 100px;
+    align-items: center;
+    height: 35rem;
+    width: 122rem;
+    margin:10rem 4rem;
+    gap: 5rem;
+    scroll-margin: 18rem;
+}
+.gift-card-section h3{
+    font-size: 2rem;
 }
 .gift-card-content{
     display:flex;
+    padding-right: 2rem;
     flex-direction: column;
-gap:20px;
+    gap:2rem;
+}
+
+.footer-upper{
+    background-color: var(--purple600);
+    width: 126.3rem;
+    font-size: 1.6rem;
+    padding: 2rem 0;
 }
 .footer-upper .container{
     display: flex;
     color:white;
     justify-content:space-between;
 }
-.footer-upper{
-    background-color: var(--purple600);
-    padding: 20px 0;
-}
 .footer-upper h4{
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    border-bottom: .2rem solid white;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .footer-upper ul li{
     list-style: none;
 }
 .footer-lower{
+    width: 126.3rem;
     background-color: var(--purple300);
     display:flex;
     justify-content: center;
     color: white;
-    padding:20px;
+    padding:1rem;
 }
+@media (max-width: 376px)/* iphone x */
+{
+    html{
+        font-size: 50.7%;
+    }
+
+
+}
+/* @media (min-width: 378px) and (max-width: 1250px)
+{
+    html{
+        font-size: 10%;
+    }
+}
+@media (min-width: 1251px)
+{
+    html{
+        font-size: 62.5%;
+    }
+}
+ */
